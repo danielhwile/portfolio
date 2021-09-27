@@ -1,0 +1,467 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+}
+.body > *{
+    width: 100%;
+}
+.aboutDiv{
+    z-index: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    position: absolute;
+    left: -40vw;
+    bottom: 30vh;
+    width: 120vw;
+    height: 4px;
+    background-color: yellowgreen;
+    animation-iteration-count: infinite;
+    transition: .2s linear;
+}
+.line:hover{
+    height: 8px;
+}
+.lineA{
+    animation-name: rotationA;
+    animation-duration: 90s;
+}
+.lineB{
+    animation-name: rotationB;
+    animation-duration: 180s;
+    background-color: rgb(63, 63, 226);
+}
+.lineC{
+    animation-name: rotationC;
+    animation-duration: 60s;
+    background-color: rgb(63, 63, 226);
+}
+.lineD{
+    transform: rotate(75deg);
+    animation-name: rotationD;
+    animation-duration: 90s;
+}
+.lineE{
+    transform: rotate(75deg);
+}
+@keyframes rotationA {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
+@keyframes rotationB {
+    0%   {transform: rotate(30deg);}
+    100% {transform: rotate(390deg);}
+  }
+@keyframes rotationC {
+    0%   {transform: rotate(315deg);}
+    100% {transform: rotate(-45deg);}
+  }
+@keyframes rotationD {
+    0%   {transform: rotate(435deg);}
+    100% {transform: rotate(75deg);}
+  }
+.yellowGreen{
+    color:yellowgreen;
+    font-size: .5em;
+}
+.anchor{
+    scroll-snap-stop: always;
+    position: relative;
+    top: -80px;
+}
+.aboutTitle{
+    padding: .1em .5em;
+    border-radius: .3em;
+    background-color: rgba(95, 95, 95, 0.24);  
+    backdrop-filter: blur(8px);
+    font-family: "Oleo Script Swash Caps", "Lily Script One", Script MT, Brush Script MT;
+    font-weight: 400;
+    font-size: 4em;
+    color: rgb(226, 228, 250);
+}
+.aboutDescr{
+    margin: 1em;
+    padding: .1em .5em;
+    border-radius: .3em;
+    background-color: rgba(95, 95, 95, 0.24);  
+    backdrop-filter: blur(8px);
+    font-weight: 900;
+    font-size: 2em;
+    color: rgb(226, 228, 250);
+}
+.W-Blue{
+    color: rgb(63, 63, 226);
+    font-size: 1.2em;
+}
+.sectionTitle{
+    padding: .1em .5em;
+    border-radius: .3em;
+    background-color: rgba(95, 95, 95, 0.24);  
+    backdrop-filter: blur(8px);
+    font-family: "Oleo Script Swash Caps", "Lily Script One", Script MT, Brush Script MT;
+    font-weight: 400;
+    font-size: 4em;
+    color:rgb(204, 215, 228);
+    margin: 0 0 .5em 0;
+}
+.aboutDetails{
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3em 0;
+    border-top: solid 3px yellowgreen;
+    background-color: rgb(31, 31, 31);  
+}
+.aboutTextDiv{
+    max-width: 45em;
+    width: 90vw;
+    padding: 1em 1em;
+    background: linear-gradient(to left, #06357c44, #0624502d, #03173618);
+    border-radius: 3em;
+    color:rgb(223, 212, 200);
+    margin: 0 0 0 .5em;
+    font-size: 1.5em;
+}
+.emphasize{
+    color: yellowgreen;
+}
+.dot{
+    border-radius: 100%;
+    border: yellowgreen 4px solid;
+    position: relative;
+    bottom: 250px;
+    width: 8px;
+    height: 8px;
+    z-index: 1;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.dotOne{
+    animation-name: DotOneAnimate;
+    animation-duration: 12s;
+}
+.dotTwo{
+    left: 510px;
+    border:rgb(63, 63, 226) 4px solid;
+    animation-name: DotTwoAnimate;
+    animation-duration: 12s;
+}
+.dotThree{
+    left: 280px;
+    bottom: 430px;
+    animation-name: DotThreeAnimate;
+    animation-duration: 12s;
+}
+@keyframes DotOneAnimate {
+    0%   {bottom: 250px;
+        left: 0px;}
+    25%   {bottom: 175px;
+        left: 0px;}
+    50%   {bottom: 175px;
+        left: 90px;}
+    75%   {bottom: 250px;
+        left: 90px;}
+    100%   {bottom: 250px;
+        left: 0px;}
+  }
+@keyframes DotTwoAnimate {
+    0%   {bottom: 250px;
+        left: 400px;}
+    25%   {bottom: 250px;
+        left: 510px;}
+    50%   {bottom: 145px;
+        left: 510px;}
+    75%   {bottom: 145px;
+        left: 400px;}
+    100%   {bottom: 250px;
+        left: 400px;}
+  }
+@keyframes DotThreeAnimate {
+    0%   {bottom: 430px;
+        left: 280px;}
+    25%   {bottom: 310px;
+        left: 280px;}
+    50%   {bottom: 310px;
+        left: 180px;}
+    75%   {bottom: 430px;
+        left: 180px;}
+    100%   {bottom: 430px;
+        left: 280px;}
+  }
+.monitorHolder{
+  margin: 1em;
+}
+.computerImage{
+    position: relative;
+    z-index: 2;
+}
+.selfPortrait{
+    border-radius: 2em;
+    border: solid 2px yellowgreen;
+    margin: 0 1em;
+}
+.aboutImageAndTextHolder{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.addHalfEmMargin{
+    margin: 0.5em 0;
+}
+.experienceDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top:rgb(63, 63, 226) solid 3px;
+    min-height: 100vh;
+}
+.experienceImg{
+    margin: 0 3em;
+}
+.experienceDetails{
+    display: flex;
+    color:rgb(223, 212, 200);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    margin: 5px 0 0 0;
+    width: 100%
+}
+.workEdHolder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.edDiv{
+    width: 75%;
+    border-bottom: rgb(223, 212, 200) solid 1px;
+}
+.workDiv{
+    width: 75%;
+    border-bottom: rgb(223, 212, 200) solid 1px;
+}
+.experience{
+    z-index: 3;
+}
+.photoAndExperience{
+    display: flex;
+}
+.experienceList{
+    width: 100%;
+    margin: 1em 0;
+}
+.skill{
+    background: linear-gradient(to left, rgba(95, 139, 29, 0.507), rgba(63, 63, 226, 0.342));
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 5em;
+    margin: .5em;
+    border-radius: 1em;
+}
+.skillsDiv{
+    Width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 0 2em 0;
+}
+.skillIcon{
+    font-size: 3em;
+}
+.projectDiv{
+    z-index: 4;
+}
+.projectsPhotoDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projectDetails{
+    border-top: rgb(63, 63, 226) 2px solid;
+    display: flex;
+    color:rgb(223, 212, 200);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+.projectHolder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    min-height: 70vh;
+}
+.project{
+    display: flex;
+    border-radius: 2em;
+    border: 2px solid rgb(134, 131, 128);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    width: 90%;
+    background: linear-gradient(to left, #06357c44, #0624502d, rgba(31, 46, 0, 0.158));
+}
+.projectDescription{
+    width: 100%;
+    margin: 0 0 0 .5em;
+}
+.projectImage{
+    transition: .2s linear;
+}
+.projectImage:hover{
+    transform: rotate(-5deg) scale(1.1);
+}
+.projectLinks{
+    display: flex;
+}
+.link{
+    color:rgb(235, 230, 225);
+    background-color: rgb(29, 29, 153);
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 5em;
+    margin: .5em;
+    border-radius: 1em;
+    box-shadow: yellowgreen 3px 3px;
+    transition: .2s linear;
+}
+.link:hover{
+    box-shadow: rgb(155, 136, 102) 0px 0px;
+    background-color: rgb(63, 63, 226);
+    top: 3px;
+    left: 3px;
+}
+.contactMeDiv{
+    z-index: 5;
+    height: calc(100vh - 78px);
+    
+}
+.phoneAndContactMe{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: calc(100vh - 78px);
+    
+    border-top: yellowgreen 3px solid;
+}
+.phoneImage{
+    margin: 2em;
+    transition: .1s linear;
+}
+.phoneImage:hover{
+    transform: scale(1.07) rotate(-1.5deg);
+}
+.contactMeBody{
+    display: flex;
+    color:rgb(236, 227, 217);
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 2em;
+}
+.contactTitle{
+    margin: 2em 0;
+    padding: 1em;
+    background-color: rgb(31, 31, 31);
+    color:rgb(223, 240, 255);
+    box-shadow: 0 0 1em yellowgreen;
+    border-radius: .5em;
+    background-color: rgba(154, 200, 243, 0.116);  
+}
+.contactColumnsHolder{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+.contactLeftDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contactRightDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.iconContainer{
+    min-width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex;
+    background-color: rgb(31, 31, 31);
+    color:rgb(223, 240, 255);
+    box-shadow: 0 0 .5em rgb(50, 98, 202);
+    border-radius: .5em;
+    padding: 1em 2em;
+    transition: .2s linear;
+    background-color: rgba(154, 200, 243, 0.116); 
+}
+.iconContainer:hover{
+    transform: scale(1.1);
+}
+.iconContainer:hover .contactIcon{
+    transform: rotate(-5deg) scale(1.2);
+}
+.contactIcon{
+  margin: .5em;
+  font-size: 1.5em;
+  transition: .2s linear;
+}
+.contactLink{
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media screen and (max-width: 975px) {
+    .aboutImageAndTextHolder{
+        flex-direction: column;
+    }
+    .phoneImage{
+        display: none;
+    }
+    .iconContainer{
+        padding: 0 .5em;
+    }
+    .skillsDiv{
+        width: 80%;
+    }
+    .edDiv{
+        width: 90%;
+    }
+    .workDiv{
+        width: 90%;
+    }
+    .experienceImg{
+        display: none;
+    }
+    .projectLinks{
+        flex-direction: column;
+    }
+    }
