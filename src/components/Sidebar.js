@@ -5,35 +5,35 @@ const Sidebar = () => {
         <>
         
         <div className="logoHolder">
-            <div className="logoCircle">
+            <a href="#Top"><div className="logoCircle">
                 <img src={logo} width='60' height='60' id="logo"/>
-            </div>
+            </div></a>
         </div>
         <nav className="navigation">
             <ul>
                 <li className="navItem" id="aboutMeNav">
-                    <a>
+                    <a href="#AboutMe">
                         <div className="coverNavText rotate">
                             About Me
                         </div>
                     </a>
                 </li>
                 <li className="navItem">
-                    <a>
+                    <a href="#Experience">
                         <div className="coverNavText rotate">
                             Experience
                         </div>
                     </a>
                 </li>
                 <li className="navItem">
-                    <a>
+                    <a href="#Projects">
                         <div className="coverNavText opprotate">
                             Projects
                         </div>
                     </a>
                 </li>
                 <li className="navItem">
-                    <a>
+                    <a href="#ContactMe">
                         <div className="coverNavText opprotate">
                             Contact Me
                         </div>
