@@ -6,7 +6,7 @@ const Sidebar = () => {
         
         <div className="logoHolder">
             <a href="#Top"><div className="logoCircle">
-                <img src={logo} width='60' height='60' id="logo"/>
+                <img src={logo} alt="Cursive W Logo" width='60' height='60' id="logo"/>
             </div></a>
         </div>
         <nav className="navigation">
@@ -18,14 +18,14 @@ const Sidebar = () => {
                         </div>
                     </a>
                 </li>
-                <li className="navItem">
+                <li className="navItem" id="experNav">
                     <a href="#Experience">
                         <div className="coverNavText rotate">
                             Experience
                         </div>
                     </a>
                 </li>
-                <li className="navItem">
+                <li className="navItem" id="projectNav">
                     <a href="#Projects">
                         <div className="coverNavText opprotate">
                             Projects

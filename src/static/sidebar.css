@@ -52,7 +52,10 @@
 .logoHolder{
     width: auto;
 }
-#aboutMeNav{
+#projectNav{
     display: none;
-}    
+}
+#experNav{
+    display: none;
+}
 }

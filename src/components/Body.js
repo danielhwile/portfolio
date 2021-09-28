@@ -28,7 +28,7 @@ const Body = () => {
                 <h1 className="sectionTitle">About Me</h1>
                     
                 <div className="aboutImageAndTextHolder">
-                        <img src={selfImage} className="selfPortrait" width='275' height="auto"/>
+                        <img src={selfImage} className="selfPortrait" alt="Self Portrait"width='275' height="auto"/>
                         <div className="aboutTextDiv">
                             <p>I'm Daniel Wile, I am a <a className="emphasize">Full Stack Developer</a> with Centene Corperation.  
                                 I am currently working on my <a className="emphasize">Masters in Computer Science</a> at ECU and plan to graduate in 2023. I hold a Bachelors of Science in Chemical Engineering from Clemson University.
@@ -36,7 +36,7 @@ const Body = () => {
                         </div>
                 </div>
                 <div className="monitorHolder">
-                        <img src={monitor} className="computerImage" width='500' height="auto"/>
+                        <img src={monitor} className="computerImage" alt="" width='500' height="auto"/>
                         <div className="dot dotOne"></div>
                         <div className="dot dotTwo"></div>
                         <div className="dot dotThree"></div>
@@ -45,7 +45,7 @@ const Body = () => {
         </div>
     <div id="Experience" className="anchor"></div>
     <div className="experienceDiv">
-    <img src={experiencePhoto} className="experienceImg" width='470' height="auto"/>
+    <img src={experiencePhoto} className="experienceImg" alt="" width='470' height="auto"/>
             <div className="experienceDetails">
             <h1 className="sectionTitle addHalfEmMargin">Experience</h1>
             
@@ -143,29 +143,29 @@ const Body = () => {
             <h1 className="sectionTitle addHalfEmMargin">Projects</h1>
             <div className="projectHolder">
                 <div className="project" id="projectOne">
-                    <img src={projectImg} className="projectImage" width="80" height="70"/>
+                    <img src={projectImg} alt="" className="projectImage" width="80" height="70"/>
                     <div className='projectDescription'>
                         <h2>SaveTree - A Message Board App</h2>
                         <h4>Save Tree allows users to create unique secure accounts, which they can use to create posts and comments to interact with eachother on the message board.</h4>
                         <h4>It is currently hosted and available at the link to the right. It Uses React, Node, Express, Mongodb, and Graphql</h4>
                     </div>
                     <div className="projectLinks">
-                        <div className="link">
+                    <a href="https://danielhwile.github.io/SaveClient/#/"><div className="link">
                             <h3>SaveTree</h3>
                             <FaGlobeAmericas className="skillIcon"/>
-                        </div>
-                        <div className="link">
+                        </div></a>
+                        <a href="https://github.com/danielhwile/SaveClient"><div className="link">
                             <h3>FrontEnd</h3>
                             <FaGithub className="skillIcon"/>
-                        </div>
-                        <div className="link">
+                        </div></a>
+                        <a href="https://github.com/danielhwile/save-tree-backend"><div className="link">
                             <h3>BackEnd</h3>
                             <FaGithub className="skillIcon"/>
-                        </div>
+                        </div></a>
                     </div>
                 </div>
                 <div className="project" id="projectTwo">
-                    <img src={projectImg} className="projectImage" width="80" height="70"/>
+                    <img src={projectImg} className="projectImage" alt="" width="80" height="70"/>
                     <div className='projectDescription'>
                         <h2>TO BE ADDED!</h2>
                         <h4>""</h4>
@@ -183,17 +183,17 @@ const Body = () => {
                     </div>
                 </div>
                 <div className="project" id="projectThree">
-                    <img src={projectImg} className="projectImage" width="80" height="70"/>
+                    <img src={projectImg} className="projectImage" alt="" width="80" height="70"/>
                     <div className='projectDescription'>
                         <h2>Daniel Wile - Portfolio Site</h2>
                         <h4>You're Already Here!</h4>
                         <h4>Responsive and Dynamic Portfolio Site. It uses React, JS(ES6), HTML5, and CSS3.</h4>
                     </div>
                     <div className="projectLinks">
-                        <div className="link">
+                        <a href="https://github.com/danielhwile/portfolio"><div className="link">
                             <h3>GitHub</h3>
                             <FaGithub className="skillIcon"/>
-                        </div>
+                        </div></a>
                     </div>
                 </div>
             </div>
@@ -202,7 +202,7 @@ const Body = () => {
     <div id="ContactMe" className="anchor"></div>
     <div className="contactMeDiv stickyItem">
         <div className="phoneAndContactMe">
-        <img src={Phone} className="phoneImage" width='400' height="auto"/>
+        <img src={Phone} className="phoneImage" alt="" width='400' height="auto"/>
         <div className="contactMeBody">
             <h1 className="sectionTitle">Contact Me</h1>
             <div className="contactTitle">
@@ -251,6 +251,7 @@ const Body = () => {
             </div>
             </div>
             </div>
+            <p className="footer">&copy; Created By Daniel Wile. All Rights Reserved</p>
         </div>
         </div>
     </div>
