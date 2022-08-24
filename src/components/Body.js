@@ -6,7 +6,7 @@ import experiencePhoto from '../static/experienceIcon.png'
 import monitor from "../static/monitor.png"
 import projectImg from "../static/project.png"
 import { FaReact, FaHtml5, FaCss3Alt, FaJava, FaJsSquare, FaHashtag, FaGoogle, FaPhone, FaNodeJs, FaGitAlt, FaGithub, FaLinkedin, FaAngular, FaPython, FaMapMarkedAlt, FaGlobeAmericas, FaTwitter, FaFilePdf, FaEnvelope} from 'react-icons/fa'
-import { SiJest, SiMongodb, SiGraphql, SiCsharp, SiDjango} from 'react-icons/si'
+import { SiJest, SiMongodb, SiGraphql, SiCsharp, SiDjango, SiKotlin} from 'react-icons/si'
 import { DiDatabase } from 'react-icons/di'
 
 
@@ -87,8 +87,8 @@ const Body = () => {
                         <SiCsharp className="skillIcon"/>
                     </div>
                     <div className="skill">
-                        <h3>GoLang</h3>
-                        <FaGoogle className="skillIcon"/>
+                        <h3>Kotlin</h3>
+                        <SiKotlin className="skillIcon"/>
                     </div>
                     <div className="skill">
                         <h3>HTML 5</h3>
