@@ -167,19 +167,10 @@ const Body = () => {
                 <div className="project" id="projectTwo">
                     <img src={projectImg} className="projectImage" alt="" width="80" height="70"/>
                     <div className='projectDescription'>
-                        <h2>TO BE ADDED!</h2>
-                        <h4>""</h4>
-                        <h4>""</h4>
-                    </div>
-                    <div className="projectLinks">
-                        <div className="link">
-                            <h3>Link</h3>
-                            <FaGlobeAmericas className="skillIcon"/>
-                        </div>
-                        <div className="link">
-                            <h3>GitHub</h3>
-                            <FaGithub className="skillIcon"/>
-                        </div>
+                        <h2>Member Visits - Healthcare Scheduler App</h2>
+                        <h4>Developed a scheduler application from scratch for healthcare providers to plan and schedule their upcoming appointments.</h4>
+                        <h4>The app integrates with Outlook, and helps providers and schedulers plan their appointments in a HIPPA compliant internal application.</h4>
+                        <h4>This app was developed using Angular 12, typescript, NestJS, and Mongodb as part of a 20 person scrum team at Centene.</h4>
                     </div>
                 </div>
                 <div className="project" id="projectThree">
