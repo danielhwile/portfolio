@@ -422,6 +422,7 @@
     border-radius: .5em;
     padding: 1em 2em;
     transition: .2s linear;
+    margin: .4em 0;
     background-color: rgba(154, 200, 243, 0.116); 
 }
 .iconContainer:hover{
@@ -438,6 +439,13 @@
 .contactLink{
   text-decoration: underline;
   cursor: pointer;
+}
+.footer{
+  width: 100%;
+  padding: 1em;
+  height: 5em;
+  margin: 1em 0;
+  border-top: yellowgreen solid 2px;
 }
 @media screen and (max-width: 975px) {
     .aboutImageAndTextHolder{
@@ -462,6 +470,15 @@
         display: none;
     }
     .projectLinks{
+        flex-direction: column;
+    }
+    .monitorHolder{
+        display: none;
+    }
+    .skillsDiv{
+        width: 90%;
+    }
+    .contactColumnsHolder{
         flex-direction: column;
     }
     }
