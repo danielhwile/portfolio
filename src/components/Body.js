@@ -6,7 +6,7 @@ import experiencePhoto from '../static/experienceIcon.png'
 import monitor from "../static/monitor.png"
 import projectImg from "../static/project.png"
 import { FaReact, FaHtml5, FaCss3Alt, FaJava, FaJsSquare, FaHashtag, FaGoogle, FaPhone, FaNodeJs, FaGitAlt, FaGithub, FaLinkedin, FaAngular, FaPython, FaMapMarkedAlt, FaGlobeAmericas, FaTwitter, FaFilePdf, FaEnvelope} from 'react-icons/fa'
-import { SiJest, SiMongodb, SiGraphql, SiCsharp, SiDjango, SiKotlin} from 'react-icons/si'
+import { SiJest, SiMongodb, SiGraphql, SiCsharp, SiGo, SiKotlin} from 'react-icons/si'
 import { DiDatabase } from 'react-icons/di'
 
 
@@ -31,7 +31,7 @@ const Body = () => {
                         <img src={selfImage} className="selfPortrait" alt="Self Portrait"width='275' height="auto"/>
                         <div className="aboutTextDiv">
                             <p>I'm Daniel Wile, I am a <a className="emphasize">Full Stack Developer</a> with Centene Corperation.  
-                                I am currently working on my <a className="emphasize">Masters in Computer Science</a> at ECU and plan to graduate in 2023. I hold a Bachelors of Science in Chemical Engineering from Clemson University.
+                                I am currently working on my <a className="emphasize">Masters in Computer Science</a> at ECU and plan to graduate in 2024. I hold a Bachelors of Science in Chemical Engineering from Clemson University.
                                 I am passionate about Full Stack development and working to learn more every day.  I have a background in the MERN stack as well as Python, Java, GoLang, Angular and SQL.</p>
                         </div>
                 </div>
@@ -53,7 +53,7 @@ const Body = () => {
                     <div className="edDiv">
                         <h2>Education</h2>
                         <div className="experienceList">
-                            <h4><a className="emphasize">Masters of Science</a> - Computer Science   -  East Carolina University 2021 - 2023(Est.)</h4>
+                            <h4><a className="emphasize">Masters of Science</a> - Computer Science   -  East Carolina University 2021 - 2024(Est.)</h4>
                             <h4><a className="emphasize">Bachelors of Science</a> - Chemical Engineering   -  Clemson University 2014 - 2018</h4>
                             <h4><a className="emphasize">Mthree program Alumni</a> - Front End Development / Mern Stack Program  - 2021</h4>
                         </div>
@@ -61,8 +61,9 @@ const Body = () => {
                     <div className="workDiv">
                         <h2>Work Experience</h2>
                         <div className="experienceList">
-                            <h4><a className="emphasize">Full Stack Developer</a> - Mthree Consulting / Centene Corperations 10/2021 - Present</h4>
-                            <h4><a className="emphasize">Mthree Trainee</a> - MERN Stack - Mthree Consulting Company 8/2021 - 10/2021</h4>
+                            <h4><a className="emphasize">Applciation Development Engineer II</a> - Centene Corperations 10/2022 - Present</h4>
+                            <h4><a className="emphasize">Full Stack Developer</a> - Wiley Edge Consulting / Centene Corperations 10/2021 - 10/2022</h4>
+                            <h4><a className="emphasize">Mthree Trainee</a> - MERN Stack - Wiley Edge Consulting Company 8/2021 - 10/2021</h4>
                             <h4><a className="emphasize">Product Development Engineer</a> - Forbo Siegling  - 06/2018 - 08/2021</h4>
                             <h4><a className="emphasize">Research Associate</a> - Clemson University - 05/2016 - 05/2018</h4>
                         </div>
@@ -115,8 +116,8 @@ const Body = () => {
                         <FaNodeJs className="skillIcon"/>
                     </div>
                     <div className="skill">
-                        <h3>Django</h3>
-                        <SiDjango className="skillIcon"/>
+                        <h3>GoLang</h3>
+                        <SiGo className="skillIcon"/>
                     </div>
                     <div className="skill">
                         <h3>Mongodb</h3>
